@@ -2,21 +2,6 @@ package myproject;
 
 import java.util.*;
 
-public class StudentScholarship {
-	public static void main(String[] args) {
-		Scholarship s = new Scholarship();
-		System.out.println(s.getStudentDetails("scheme b"));
-		System.out.println(s.deleteStudent(909));
-	}
-
-	@Override
-	public String toString() {
-		return "StudentScholarship [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
-				+ super.toString() + "]";
-	}
-
-}
-
 class Student {
 	String studentName;
 	Integer studentId;
@@ -90,3 +75,17 @@ public ArrayList<Student> getStudentDetails(String scholarshipScheme) {
 }
 }
 
+public class StudentScholarship {
+	public static void main(String[] args) {
+		Scholarship s = new Scholarship();
+		System.out.println(s.getStudentDetails("scheme b"));
+		System.out.println(s.deleteStudent(909));
+	}
+
+	@Override
+	public String toString() {
+		return "StudentScholarship [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
+
+}
